@@ -6,6 +6,7 @@ require (
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/go-sql-driver/mysql v1.5.0 // indirect
 	github.com/jinzhu/gorm v1.9.12
+	github.com/oceango/di v0.0.0-00010101000000-000000000000 // indirect
 	github.com/oceango/middleware v1.0.0
 	github.com/oceango/router v1.0.0
 	github.com/oceango/web v1.0.0
