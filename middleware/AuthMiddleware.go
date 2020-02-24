@@ -21,7 +21,7 @@ func AuthMiddleware(next http.Handler) http.Handler {
 		}else {
 			dbm := db.GetDb()
 			authorizationstring := r.Header.Get("Authorization")
-			if len(authorizationstring) == 0 || !strings.HasPrefix(authorizationstring, "bearer ") {
+			if len(authorizationstring) == 0 || !strings.HasPrefix(authorizationstring, "Bearer ") {
 				http.Error(w, http.StatusText(http.StatusUnauthorized), http.StatusUnauthorized)
 				return
 			}
